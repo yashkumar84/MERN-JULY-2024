@@ -1,0 +1,299 @@
+var obj = {
+    name:"Yash",
+}
+undefined
+obj.work = "Trainer";
+'Trainer'
+obj;
+{name: 'Yash', work: 'Trainer'}name: "Yash"work: "Trainer"[[Prototype]]: Object
+obj.100 = 100;
+VM218:1 Uncaught SyntaxError: Unexpected number
+obj.[100] = 100;
+VM224:1 Uncaught SyntaxError: Unexpected token '['
+obj[100] = 100;
+100
+obj;
+{100: 100, name: 'Yash', work: 'Trainer'}
+obj.100;
+VM281:1 Uncaught SyntaxError: Unexpected number
+obj[100];
+100
+obj['a'] = "skdhjs"
+'skdhjs'
+obj;
+{100: 100, name: 'Yash', work: 'Trainer', a: 'skdhjs'}100: 100a: "skdhjs"name: "Yash"work: "Trainer"[[Prototype]]: Object
+[{name:"Yash",age: 17},{name : "XYZ", age : 18},{name : "Rahul",age : 20}];
+(3) [{…}, {…}, {…}]
+for(var i = 0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+VM559:1 Uncaught ReferenceError: arr is not defined
+    at <anonymous>:1:17
+(anonymous) @ VM559:1
+var arr = [{name:"Yash",age: 17},{name : "XYZ", age : 18},{name : "Rahul",age : 20}];
+undefined
+for(var i = 0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+VM583:2 {name: 'Yash', age: 17}
+VM583:2 {name: 'XYZ', age: 18}
+VM583:2 {name: 'Rahul', age: 20}
+undefined
+for(var i = 0;i<arr.length;i++){
+    console.log(arr[i].name);
+}
+VM623:2 Yash
+VM623:2 XYZ
+VM623:2 Rahul
+undefined
+var arr = [1,2,3,4,5];
+undefined
+for(var i = 0;i<arr.length;i++){
+    arr[i] = 'RS '+arr[i];
+}
+'RS 5'
+arr;
+(5) ['RS 1', 'RS 2', 'RS 3', 'RS 4', 'RS 5']0: "RS 1"1: "RS 2"2: "RS 3"3: "RS 4"4: "RS 5"length: 5[[Prototype]]: Array(0)
+var arr = [1,2,3,4,5];
+undefined
+arr.map((ele)=> 'Rs ' + ele));
+VM887:1 Uncaught SyntaxError: Unexpected token ')'
+arr.map((ele)=> 'Rs ' + ele);
+(5) ['Rs 1', 'Rs 2', 'Rs 3', 'Rs 4', 'Rs 5']
+arr;
+(5) [1, 2, 3, 4, 5]
+arr.map((ele,index)=> 'Rs ' + ele + index);
+(5) ['Rs 10', 'Rs 21', 'Rs 32', 'Rs 43', 'Rs 54']
+arr = [10,20,30,40,50,60,70,80,90,100,110,110,2120,20228];
+(14) [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 110, 2120, 20228]0: 101: 202: 303: 404: 505: 606: 707: 808: 909: 10010: 11011: 11012: 212013: 20228length: 14[[Prototype]]: Array(0)
+for(var i =6;i<arr.length;i++){
+    console.log(arr[i]);
+}
+VM1171:2 70
+VM1171:2 80
+VM1171:2 90
+VM1171:2 100
+VM1171:2 110
+VM1171:2 110
+VM1171:2 2120
+VM1171:2 20228
+undefined
+arr = [10,20,70 ,30,40,100 , 50,60,80,90,110,110,2120,20228];
+
+(14) [10, 20, 70, 30, 40, 100, 50, 60, 80, 90, 110, 110, 2120, 20228]
+for(var i =0;i<arr.length;i++){
+    if(arr[i] > 70){
+        console.log(arr[i]);
+    }
+}
+VM1224:3 100
+VM1224:3 80
+VM1224:3 90
+VM1224:3 110
+VM1224:3 110
+VM1224:3 2120
+VM1224:3 20228
+undefined
+arr.filter((ele)=>ele > 70);
+(7) [100, 80, 90, 110, 110, 2120, 20228]
+var sum = 0;
+undefined
+for(var i =0;i<arr.length;i++){
+    sum = sum + arr[i];
+}
+23118
+sum;
+23118
+arr.reduce((acc , ele)=> acc + ele);
+23118
+arr.reduce((acc , ele)=> acc * ele);
+1.8829431548928e+28
+name = "Yash";
+'Yash'
+name.toUpperCase();
+'YASH'
+name.toLowerCase();
+'yash'
+name.charAt(2);
+'s'
+name.bold();
+'<b>Yash</b>'
+name.endsWith('h');
+true
+name.startsWith('Y');
+true
+name.indexOf('a');
+1
+name.concat(" Hello");
+'Yash Hello'
+name.localeCompare("Yash")
+0
+name.localeCompare("a");
+1
+name.localeCompare("s");
+1
+name.includes('Y');
+true
+name.substring(2);
+'sh'
+str = "      sdjkbfj      sdhfds      ";
+'      sdjkbfj      sdhfds      '
+str.trim();
+'sdjkbfj      sdhfds'
+str;
+'      sdjkbfj      sdhfds      '
+str.trimStart();
+'sdjkbfj      sdhfds      '
+name = ["yash","Rahul","Aryan","Aman","Xyz"];l
+VM2691:1 Uncaught ReferenceError: l is not defined
+    at <anonymous>:1:46
+(anonymous) @ VM2691:1
+name = ["yash","Rahul","Aryan","Aman","Xyz"];
+(5) ['yash', 'Rahul', 'Aryan', 'Aman', 'Xyz']
+for(var i = 0;i<arr.length;i++){
+    console.log(`Hello ${name[i]}`);
+}
+VM2843:2 Hello y
+VM2843:2 Hello a
+VM2843:2 Hello s
+VM2843:2 Hello h
+VM2843:2 Hello ,
+VM2843:2 Hello R
+VM2843:2 Hello a
+VM2843:2 Hello h
+VM2843:2 Hello u
+VM2843:2 Hello l
+VM2843:2 Hello ,
+VM2843:2 Hello A
+VM2843:2 Hello r
+VM2843:2 Hello y
+undefined
+for(var i = 0;i<name.length;i++){
+    console.log(`Hello ${name[i]}`);
+}
+VM2856:2 Hello y
+VM2856:2 Hello a
+VM2856:2 Hello s
+VM2856:2 Hello h
+VM2856:2 Hello ,
+VM2856:2 Hello R
+VM2856:2 Hello a
+VM2856:2 Hello h
+VM2856:2 Hello u
+VM2856:2 Hello l
+VM2856:2 Hello ,
+VM2856:2 Hello A
+VM2856:2 Hello r
+VM2856:2 Hello y
+VM2856:2 Hello a
+VM2856:2 Hello n
+VM2856:2 Hello ,
+VM2856:2 Hello A
+VM2856:2 Hello m
+VM2856:2 Hello a
+VM2856:2 Hello n
+VM2856:2 Hello ,
+VM2856:2 Hello X
+VM2856:2 Hello y
+VM2856:2 Hello z
+undefined
+name;
+'yash,Rahul,Aryan,Aman,Xyz'
+name = ["yash","Hello","Xyz","Rahul","Aryan","Aman"];
+(6) ['yash', 'Hello', 'Xyz', 'Rahul', 'Aryan', 'Aman']0: "yash"1: "Hello"2: "Xyz"3: "Rahul"4: "Aryan"5: "Aman"length: 6[[Prototype]]: Array(0)
+name;
+'yash,Hello,Xyz,Rahul,Aryan,Aman'
+for(var i = 0;i<name.length;i++){
+    console.log(`Hello ${name[i]}`);
+}
+VM3018:2 Hello y
+VM3018:2 Hello a
+VM3018:2 Hello s
+VM3018:2 Hello h
+VM3018:2 Hello ,
+VM3018:2 Hello H
+VM3018:2 Hello e
+VM3018:2 Hello l
+VM3018:2 Hello l
+VM3018:2 Hello o
+VM3018:2 Hello ,
+VM3018:2 Hello X
+VM3018:2 Hello y
+VM3018:2 Hello z
+VM3018:2 Hello ,
+VM3018:2 Hello R
+VM3018:2 Hello a
+VM3018:2 Hello h
+VM3018:2 Hello u
+VM3018:2 Hello l
+VM3018:2 Hello ,
+VM3018:2 Hello A
+VM3018:2 Hello r
+VM3018:2 Hello y
+VM3018:2 Hello a
+VM3018:2 Hello n
+VM3018:2 Hello ,
+VM3018:2 Hello A
+VM3018:2 Hello m
+VM3018:2 Hello a
+VM3018:2 Hello n
+undefined
+arr = ["yash","Hello","Xyz","Rahul","Aryan","Aman"];
+(6) ['yash', 'Hello', 'Xyz', 'Rahul', 'Aryan', 'Aman']
+arr;
+(6) ['yash', 'Hello', 'Xyz', 'Rahul', 'Aryan', 'Aman']
+for(var i = 0;i<name.length;i++){
+    console.log(`Hello ${name[i]}`);
+}
+VM3050:2 Hello y
+VM3050:2 Hello a
+VM3050:2 Hello s
+VM3050:2 Hello h
+VM3050:2 Hello ,
+VM3050:2 Hello H
+VM3050:2 Hello e
+VM3050:2 Hello l
+VM3050:2 Hello l
+VM3050:2 Hello o
+VM3050:2 Hello ,
+VM3050:2 Hello X
+VM3050:2 Hello y
+VM3050:2 Hello z
+VM3050:2 Hello ,
+VM3050:2 Hello R
+VM3050:2 Hello a
+VM3050:2 Hello h
+VM3050:2 Hello u
+VM3050:2 Hello l
+VM3050:2 Hello ,
+VM3050:2 Hello A
+VM3050:2 Hello r
+VM3050:2 Hello y
+VM3050:2 Hello a
+VM3050:2 Hello n
+VM3050:2 Hello ,
+VM3050:2 Hello A
+VM3050:2 Hello m
+VM3050:2 Hello a
+VM3050:2 Hello n
+undefined
+for(var i = 0;i<arr.length;i++){
+    console.log(`Hello ${arr[i]}`);
+}
+VM3070:2 Hello yash
+VM3070:2 Hello Hello
+VM3070:2 Hello Xyz
+VM3070:2 Hello Rahul
+VM3070:2 Hello Aryan
+VM3070:2 Hello Aman
+undefined
+name  ="Yash";
+'Yash'
+console.log(`Hello ${name}`);
+VM3170:1 Hello Yash
+undefined
+name  ="Aryan";
+'Aryan'
+console.log(`Hello ${name}`);
+VM3192:1 Hello Aryan
+undefined

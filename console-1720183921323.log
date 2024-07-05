@@ -1,0 +1,89 @@
+var obj = {
+    name : "Dhoni",
+    age : 40,
+    carrer : "Cricketer",
+    fifties : 100
+};
+undefined
+obj;
+{name: 'Dhoni', age: 40, carrer: 'Cricketer', fifties: 100}
+obj.name;
+'Dhoni'
+obj.age;
+40
+obj.carrer;
+'Cricketer'
+obj.four = 100;
+100
+obj;
+{name: 'Dhoni', age: 40, carrer: 'Cricketer', fifties: 100, four: 100}
+obj.6  = 200;
+VM327:1 Uncaught SyntaxError: Unexpected number
+obj[6] = 200;
+200
+obj;
+{6: 200, name: 'Dhoni', age: 40, carrer: 'Cricketer', fifties: 100, four: 100}
+obj.6;
+VM395:1 Uncaught SyntaxError: Unexpected number
+obj[6];
+200
+obj['age'];
+40
+delete obj.age;
+true
+obj;
+{6: 200, name: 'Dhoni', carrer: 'Cricketer', fifties: 100, four: 100}
+var forDelete = ["name","carrer"];
+undefined
+for(var i of forDelete){
+    delete obj[`${i}`];
+}
+true
+obj;
+{6: 200, fifties: 100, four: 100}
+for(var i in forDelete){
+   console.log(i);
+}
+VM788:2 0
+VM788:2 1
+undefined
+for(var i in forDelete){
+   console.log(forDelete[i]);
+}
+VM858:2 name
+VM858:2 carrer
+undefined
+for(var i of forDelete){
+   console.log(i);
+}
+VM890:2 name
+VM890:2 carrer
+undefined
+for(var i = 0;i<forDelete.length;i++){
+    console.log(forDelete[i]);
+}
+VM1017:2 name
+VM1017:2 carrer
+undefined
+obj;
+{6: 200, fifties: 100, four: 100}
+var f = "four";
+undefined
+obj[f];
+100
+console.log(f);
+VM1183:1 four
+undefined
+obj['four'];
+100
+obj["four"];
+100
+var forPrint = [6 , "fifties" ,  "four"];
+undefined
+for(var ele of forPrint){
+    console.log(obj[ele]);
+}
+VM1414:2 200
+VM1414:2 100
+VM1414:2 100
+undefined

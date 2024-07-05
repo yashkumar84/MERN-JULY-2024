@@ -1,0 +1,60 @@
+var a = 10;
+undefined
+var var = 10;
+VM100:1 Uncaught SyntaxError: Unexpected token 'var'
+var a = 10;
+undefined
+typeof a;
+'number'
+a = "Yash";
+'Yash'
+typeof a;
+'string'
+a = true;
+true
+typeof a;
+'boolean'
+a = 224567951452520525424141414552141412211745
+2.245679514525205e+41
+a = 224567951452520525424141414552141412211745n
+224567951452520525424141414552141412211745n
+a;
+224567951452520525424141414552141412211745n
+typeof a;
+'bigint'
+a = 9.0;
+9
+typeof a;
+'number'
+a =9.5;
+9.5
+typeof a;
+'number'
+a = 'a';
+'a'
+typeof a;
+'string'
+// undefined
+undefined
+var b;
+undefined
+b;
+undefined
+//null
+undefined
+a = 10;
+10
+a = null;
+null
+a = 10;
+b = 20;
+c = a+b;
+console.log(c);
+VM858:4 30
+undefined
+a = 10;
+10
+a = null;
+null
+a;
+null
