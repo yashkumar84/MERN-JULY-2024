@@ -1,0 +1,275 @@
+var a = 10;
+undefined
+//KeyWords 
+undefined
+var var = 10;
+VM118:1 Uncaught SyntaxError: Unexpected token 'var'
+var for = 10;
+VM129:1 Uncaught SyntaxError: Unexpected token 'for'
+//Dynamically Typed
+undefined
+typeof a;
+'number'
+a = "yash";
+'yash'
+typeof a;
+'string'
+a = 10.788;
+10.788
+typeof a;
+'number'
+a = 'a';
+'a'
+typeof a;
+'string'
+a = true;
+true
+typeof a;
+'boolean'
+a = 645446545646545646546545645454554545454564545
+6.4544654564654566e+44
+54
+54
+a = 645446545646545646546545645454554545454564545n;
+645446545646545646546545645454554545454564545n
+a;
+645446545646545646546545645454554545454564545n
+typeof a;
+'bigint'
+//Undefined 
+undefined
+var b;
+undefined
+b;
+undefined
+typeof b;;
+'undefined'
+//null
+undefined
+a;
+645446545646545646546545645454554545454564545n
+a = null;
+null
+a;
+null
+var arr = [1,2,3,4,5,6,7,8,9];
+undefined
+arrr;
+VM755:1 Uncaught ReferenceError: arrr is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM755:1
+arr;
+(9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+arr[3];
+4
+arr[7];
+8
+for(var i=0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+
+VM895:2 1
+VM895:2 2
+VM895:2 3
+VM895:2 4
+VM895:2 5
+VM895:2 6
+VM895:2 7
+VM895:2 8
+VM895:2 9
+undefined
+for(var i of arr){
+    console.log(i);
+}
+VM974:2 1
+VM974:2 2
+VM974:2 3
+VM974:2 4
+VM974:2 5
+VM974:2 6
+VM974:2 7
+VM974:2 8
+VM974:2 9
+undefined
+for(var i in arr){
+    console.log(i);
+}
+VM990:2 0
+VM990:2 1
+VM990:2 2
+VM990:2 3
+VM990:2 4
+VM990:2 5
+VM990:2 6
+VM990:2 7
+VM990:2 8
+undefined
+for(var i in arr){
+    console.log(arr[i]);
+}
+VM1007:2 1
+VM1007:2 2
+VM1007:2 3
+VM1007:2 4
+VM1007:2 5
+VM1007:2 6
+VM1007:2 7
+VM1007:2 8
+VM1007:2 9
+undefined
+5 in arr;
+true
+10 in arr;
+false
+arr;
+(9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+arr.push(10);
+10
+arr;
+(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+arr.pop();
+10
+arr;
+(9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+arr.unshift(0);
+10
+arr;
+(10) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+arr.shift();
+0
+arr;
+(9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+arr.pop(3);
+9
+arr;
+(8) [1, 2, 3, 4, 5, 6, 7, 8]
+arr.splice(1,1);
+[2]
+arr;
+(7) [1, 3, 4, 5, 6, 7, 8]
+arr.splice(1,0 , 2);
+[]
+arr;
+(8) [1, 2, 3, 4, 5, 6, 7, 8]
+arr.splice(4,1 , 10);
+[5]
+arr;
+(8) [1, 2, 3, 4, 10, 6, 7, 8]
+arr.splice(3,3);\
+VM1573:1 Uncaught SyntaxError: Invalid or unexpected token
+arr.splice(3,3);
+(3) [4, 10, 6]
+arr;
+(5) [1, 2, 3, 7, 8]
+arr.splice(3,3);
+(2) [7, 8]
+arr;
+(3) [1, 2, 3]0: 11: 22: 3length: 3[[Prototype]]: Array(0)
+arr.with(1,4);
+(3) [1, 4, 3]
+arr;
+(3) [1, 2, 3]
+var arr2 = arr.with(1,4);
+undefined
+arr2;
+(3) [1, 4, 3]
+arr2.fill(-1);
+(3) [-1, -1, -1]
+arr2.fill(3,1,3);
+(3) [-1, 3, 3]
+["Yash ",10,30,50,70];
+(5) ['Yash ', 10, 30, 50, 70]
+var obj = {
+    roll : 1
+    name : "Yash",
+    maths : 20,
+    hindi : 30,
+    physics : 50,
+    che : 70
+};
+VM2020:3 Uncaught SyntaxError: Unexpected identifier 'name'
+var obj = {
+    roll : 1,
+    name : "Yash",
+    maths : 20,
+    hindi : 30,
+    physics : 50,
+    che : 70
+};
+undefined
+obj;
+{roll: 1, name: 'Yash', maths: 20, hindi: 30, physics: 50, …}
+var obj1 = {
+    roll : 2,
+    name : "Aman",
+    maths : 30,
+    hindi : 20,
+    physics : 70,
+    che : 50
+};
+undefined
+obj1.name;
+'Aman'
+var dhoni = {name : "MS DHONI",age : 40, address : "Jharkhand",fifties : 100};
+undefined
+dhini;
+VM2239:1 Uncaught ReferenceError: dhini is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2239:1
+dhoni;
+{name: 'MS DHONI', age: 40, address: 'Jharkhand', fifties: 100}address: "Jharkhand"age: 40fifties: 100name: "MS DHONI"[[Prototype]]: Object
+dhoni.four = 400;
+400
+dhoni;
+{name: 'MS DHONI', age: 40, address: 'Jharkhand', fifties: 100, four: 400}
+dhoni.6 = 600;
+VM2344:1 Uncaught SyntaxError: Unexpected number
+dhoni[6] = 600;
+600
+dhoni;
+{6: 600, name: 'MS DHONI', age: 40, address: 'Jharkhand', fifties: 100, four: 400}6: 600address: "Jharkhand"age: 40fifties: 100four: 400name: "MS DHONI"[[Prototype]]: Object
+dhoni.6;
+VM2438:1 Uncaught SyntaxError: Unexpected number
+dhoni[6];
+600
+dhoni['address'];
+'Jharkhand'
+dhoni['addressk'];
+undefined
+dhoni[8];
+undefined
+dhoni['height'] = 6;
+6
+dhoni;
+{6: 600, name: 'MS DHONI', age: 40, address: 'Jharkhand', fifties: 100, four: 400, …}6: 600address: "Jharkhand"age: 40fifties: 100four: 400height: 6name: "MS DHONI"[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+var objArr = [obj , obj1];
+undefined
+objArr;
+(2) [{…}, {…}]0: {roll: 1, name: 'Yash', maths: 20, hindi: 30, physics: 50, …}che: 70hindi: 30maths: 20name: "Yash"physics: 50roll: 1[[Prototype]]: Object1: {roll: 2, name: 'Aman', maths: 30, hindi: 20, physics: 70, …}che: 50hindi: 20maths: 30name: "Aman"physics: 70roll: 2[[Prototype]]: Objectlength: 2[[Prototype]]: Array(0)
+delete dhoni.address;
+true
+dhoni;
+{6: 600, name: 'MS DHONI', age: 40, fifties: 100, four: 400, height: 6}
+delete dhoni.6;
+VM2743:1 Uncaught SyntaxError: Unexpected number
+delete dhoni[6];
+true
+dhoni;
+{name: 'MS DHONI', age: 40, fifties: 100, four: 400, height: 6}age: 40fifties: 100four: 400height: 6name: "MS DHONI"[[Prototype]]: Object
+//String Interpolation
+undefined
+var greet = ["Yash","Aman","Vivek","Aryan","Keshav"];
+undefined
+var message = `Hello ${greet[0]} How Are You BreakFast is Ready`;
+undefined
+message;
+'Hello Yash How Are You BreakFast is Ready'
+for(var ele of greet){
+    console.log(`Hello ${ele} How Are You BreakFast is Ready`);
+}
+VM3253:2 Hello Yash How Are You BreakFast is Ready
+VM3253:2 Hello Aman How Are You BreakFast is Ready
+VM3253:2 Hello Vivek How Are You BreakFast is Ready
+VM3253:2 Hello Aryan How Are You BreakFast is Ready
+VM3253:2 Hello Keshav How Are You BreakFast is Ready
+undefined
