@@ -1,0 +1,136 @@
+console.log(myNewAdd());
+let myNewAdd = function(a,b){
+    return a + b;
+}
+console.log(myNewAdd());
+
+VM247:1 Uncaught ReferenceError: myNewAdd is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM247:1
+console.log(myNewAdd(10,20));
+let myNewAdd = function(a,b){
+    return a + b;
+}
+console.log(myNewAdd(10,30));
+
+VM298:1 Uncaught ReferenceError: myNewAdd is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM298:1
+// console.log(myNewAdd(10,20));
+let myNewAdd = function(a,b){
+    return a + b;
+}
+console.log(myNewAdd(10,30));
+
+VM301:5 40
+undefined
+{
+    const tdz = 89;
+    {
+        let tdz = 90;
+        console.log(tdz);
+    }
+    console.log(tdz);
+}
+VM449:5 90
+VM449:7 89
+undefined
+{
+    const tdz = 89;
+    {
+        
+        console.log(tdz);
+    }
+    console.log(tdz);
+}
+VM463:5 89
+VM463:7 89
+undefined
+//Lexical Scoping Concept Above
+undefined
+const findGreater = (x , y)=>{
+    if(x > y){
+        return x;
+    }else{
+        return y;
+    }
+}
+undefined
+findGreater(10,20);
+20
+const findMax = (x,y,z)=>{
+    if(x > y && x > z)console.log(x , "is Greater");
+    else if(y > x && y > z)console.log(y, "is Greater");
+    else console.log(z, "is Greater");
+    
+}
+undefined
+findMax(78,23,67);
+VM1099:2 78 'is Greater'
+undefined
+findMax(78,78,67);
+VM1099:4 67 'is Greater'
+undefined
+const findMax = (x,y,z)=>{
+    if(x >= y && x >= z)console.log(x , "is Greater");
+    else if(y >= x && y >= z)console.log(y, "is Greater");
+    else console.log(z, "is Greater");
+    
+}
+undefined
+findMax(78,78,67);
+VM1174:2 78 'is Greater'
+undefined
+const findMax = (x,y,z)=>{
+    if(x >= y && x >= z)console.log(`${x}  is Greater`);
+    else if(y >= x && y >= z)console.log(y, "is Greater");
+    else console.log(z, "is Greater");
+    
+}
+undefined
+findMax(78,78,67);
+VM1208:2 78  is Greater
+undefined
+let arr = ["Yash","Nitish","Devesh","Prince","Aryan","Amit"];
+undefined
+for(let i of arr){
+    console.log(`Hello ${i} How Are You`);
+}
+VM1399:2 Hello Yash How Are You
+VM1399:2 Hello Nitish How Are You
+VM1399:2 Hello Devesh How Are You
+VM1399:2 Hello Prince How Are You
+VM1399:2 Hello Aryan How Are You
+VM1399:2 Hello Amit How Are You
+undefined
+//Callbacks
+
+undefined
+arr = [1,2,3,4,5,6];
+(6) [1, 2, 3, 4, 5, 6]
+//['Rs 1','Rs 2','Rs 3']
+undefined
+"Yash " + 1;
+'Yash 1'
+for(let i in arr){
+  arr[i] = "Rs " + arr[i];  
+}
+'Rs 6'
+arr;
+(6) ['Rs 1', 'Rs 2', 'Rs 3', 'Rs 4', 'Rs 5', 'Rs 6']
+let price = [100,200,300,400,500];
+undefined
+let discountPrice = price.map((ele)=>ele - 10%);
+VM1891:1 Uncaught SyntaxError: Unexpected token ')'
+let discountPrice = price.map((ele)=>ele - (ele * 10)/100);
+undefined
+discountPrice;
+(5) [90, 180, 270, 360, 450]
+price;
+(5) [100, 200, 300, 400, 500]0: 1001: 2002: 3003: 4004: 500length: 5[[Prototype]]: Array(0)
+price.filter((ele)=>ele >=300);
+(3) [300, 400, 500]0: 3001: 4002: 500length: 3[[Prototype]]: Array(0)
+let names = ["Yash","Nitish","Devesh","Prince","Aryan","Amit"];
+undefined
+names.filter((ele)=>ele.startsWith('A'));
+(2) ['Aryan', 'Amit']
