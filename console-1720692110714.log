@@ -1,0 +1,67 @@
+//CallBacks
+undefined
+let arr = ["Yash","Nitish","Devesh","Prince","Aryan","Amit"];
+undefined
+arr.map((ele)=> `Hello ${ele}`);
+(6) ['Hello Yash', 'Hello Nitish', 'Hello Devesh', 'Hello Prince', 'Hello Aryan', 'Hello Amit']0: "Hello Yash"1: "Hello Nitish"2: "Hello Devesh"3: "Hello Prince"4: "Hello Aryan"5: "Hello Amit"length: 6[[Prototype]]: Array(0)
+let price = [100,200,300,400,500];
+undefined
+price.filter((ele)=>ele >=300);
+(3) [300, 400, 500]
+price.reduce((acc , ele)=> acc + ele );
+1500
+price.reduce((acc , ele)=> {
+    let sum = acc + ele;
+    return sum;
+} );
+1500
+price.reduce((acc , ele)=> {
+    if(ele >= 300){
+        let sum = acc + ele;
+        return sum;
+    }
+    return 0;
+} );
+1200
+price.find((ele)=> ele == 300);
+300
+price.find((ele)=> ele == 800);
+undefined
+let objArr = [{id : 1,email: "yash@gmail.com",name : "Yash"},{id:2,email:"amit@gmail.com",name : "Amit"}]
+undefined
+objArr.find((ele)=>ele.email == "yash@gmail.com");
+{id: 1, email: 'yash@gmail.com', name: 'Yash'}email: "yash@gmail.com"id: 1name: "Yash"[[Prototype]]: Object
+objArr.findIndex((ele)=>ele.email == "yash@gmail.com");
+0
+arr = [34,5,6,73,23,45,67,89,1,2,3];
+(11) [34, 5, 6, 73, 23, 45, 67, 89, 1, 2, 3]
+arr.sort((a,b)=>a-b);
+(11) [1, 2, 3, 5, 6, 23, 34, 45, 67, 73, 89]
+arr.sort((a,b)=>b-a);
+(11) [89, 73, 67, 45, 34, 23, 6, 5, 3, 2, 1]
+arr.sort((a,b)=>a+b);
+(11) [89, 73, 67, 45, 34, 23, 6, 5, 3, 2, 1]0: 891: 732: 673: 454: 345: 236: 67: 58: 39: 210: 1length: 11[[Prototype]]: Array(0)
+arr;
+(11) [89, 73, 67, 45, 34, 23, 6, 5, 3, 2, 1]
+let userInput = prompt("Enter the Value");
+let userInput1 = prompt("Enter the Value");
+console.log(userInput + userInput1);
+VM1498:3 1020
+undefined
+let userInput = parseInt(prompt("Enter the Value"));
+let userInput1 = parseInt(prompt("Enter the Value"));
+console.log(userInput + userInput1);
+VM1514:3 30
+undefined
+"10" + "20";
+'1020'
+"YASH";
+'YASH'
+let str = "10";
+undefined
+let str1 = "yash";
+undefined
+parseInt(str);
+10
+parseInt(str1);
+NaN

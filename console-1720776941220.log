@@ -1,0 +1,213 @@
+VM594:4 0
+VM594:4 1
+VM594:4 2
+VM594:4 3
+VM594:4 4
+VM594:4 5
+VM594:4 6
+VM594:4 7
+VM594:4 8
+VM594:4 9
+VM594:4 10
+VM594:4 0
+VM594:4 1
+VM594:4 2
+VM594:4 3
+VM594:4 4
+VM594:4 5
+VM594:4 6
+VM594:4 7
+VM594:4 8
+VM594:4 9
+VM594:4 10
+var arr = [1,2,3,4,5];
+undefined
+let arr = [1,2,3,4,5,6];
+VM728:1 Uncaught SyntaxError: Identifier 'arr' has already been declared
+let arr1 = [1,2,3,4,5];
+undefined
+let arr2 = [6,7,8,9,0];
+undefined
+arr1 + arr2;
+'1,2,3,4,56,7,8,9,0'
+let arr3 = [arr1 , arr2];
+undefined
+arr3;
+(2) [Array(5), Array(5)]0: (5) [1, 2, 3, 4, 5]0: 11: 22: 33: 44: 5length: 5[[Prototype]]: Array(0)1: (5) [6, 7, 8, 9, 0]0: 61: 72: 83: 94: 0length: 5[[Prototype]]: Array(0)length: 2[[Prototype]]: Array(0)
+//Spread operator 
+undefined
+arr3 = [...arr1 , ...arr2];
+(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+let obj = {
+    name : "Yash"
+}
+undefined
+let obj1 = {
+    age : 18\
+}
+VM1178:2 Uncaught SyntaxError: Invalid or unexpected token
+let obj1 = {
+    age : 18
+    
+}
+undefined
+let obj3 = {...obj , ...obj1};
+undefined
+obj3;
+{name: 'Yash', age: 18}age: 18name: "Yash"[[Prototype]]: Object
+function add(a,b){
+    return a + b;
+}
+undefined
+function add(a,b , c){
+    return a + b + c;
+}
+undefined
+add(1,2,3,4,5,6,7,78);
+6
+function add(){
+    console.log(arguments);
+}
+undefined
+add(1,2,3,4,5,6);
+VM1507:2 Arguments(6) [1, 2, 3, 4, 5, 6, callee: ƒ, Symbol(Symbol.iterator): ƒ]0: 11: 22: 33: 44: 55: 6callee: ƒ add()length: 6Symbol(Symbol.iterator): ƒ values()[[Prototype]]: Object
+undefined
+console.dir();
+undefined
+console.dir(add);
+VM1613:1 ƒ add()arguments: nullcaller: nulllength: 0name: "add"prototype: {}constructor: ƒ add()[[Prototype]]: Object[[FunctionLocation]]: VM1507:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2]
+undefined
+function add(){
+    return arguments.reduce((acc , ele)=>acc + ele);
+}
+undefined
+add(1,2,3,4,5,6);
+VM1684:2 Uncaught TypeError: arguments.reduce is not a function
+    at add (<anonymous>:2:22)
+    at <anonymous>:1:1
+add @ VM1684:2
+(anonymous) @ VM1775:1
+function add(){
+    return arguments.length;
+}
+undefined
+add(1,2,3,4,5,6);
+6
+function add(){
+    let sum  = 0;
+    for(let i = 0;i<arguments.length;i++){
+        sum+= arguments[i];
+    }
+    return sum;
+        
+}
+undefined
+add(1,2,3,4,5,6);
+21
+add(1,2,3)
+6
+add(1,2,3,4,5,6,7,8)
+36
+var a;
+undefined
+function add(...args){
+    return args.reduce((acc , ele)=>acc + ele);     
+}
+undefined
+add(1,2,3,45)
+51
+function add(...args){
+    return args.reduce((acc , ele)=>acc + ele);     
+}
+undefined
+a = 90;
+90
+let a = "Yash";
+VM2252:1 Uncaught SyntaxError: Identifier 'a' has already been declared
+let name = "Yash";
+undefined
+typeof name;
+'string'
+typeof obj;
+'object'
+// Autoboxing
+undefined
+String;
+ƒ String() { [native code] }
+name = 10;
+10
+typeof name;
+'number'
+Number;
+ƒ Number() { [native code] }
+class Yash{
+    constructor(){
+        this.name = "Yash";
+    }
+}
+undefined
+let yash = new Yash();
+undefined
+yash.name;
+'Yash'
+typeof yash;
+'object'
+typeof Yash;
+'function'
+function Yash1(){
+    let name = "Yash";
+}
+undefined
+let yash1 = new Yash1();
+undefined
+typeof Yash;
+'function'
+typeof Yash1;
+'function'
+typeof Yash;
+'function'
+typeof yash1;
+'object'
+yash1.name;
+undefined
+add(1,2,3,4,"2");
+'102'
+add(1,2,3,4,"2" ,"Yash");
+'102Yash'
+add(1,2,3,4,"2" ,"Yash" ,NaN);
+'102YashNaN'
+function one(){
+return 1;
+}
+    
+undefined
+add(1,2,3,4,"2" ,"Yash" ,NaN ,one);
+'102YashNaNfunction one(){\nreturn 1;\n}'
+a = 10;
+10
+a.isNaN();
+VM3314:1 Uncaught TypeError: a.isNaN is not a function
+    at <anonymous>:1:3
+(anonymous) @ VM3314:1
+isNaN(a);
+false
+a = "2";;
+'2'
+isNaN(a);
+false
+a;
+'2'
+a = null;
+null
+isNaN(a);
+false
+a = NaN;
+NaN
+isNaN(a);
+true
+isNaN(parseInt("Yash")) ? sum : sum + parseInt("Yash");
+VM3565:1 Uncaught ReferenceError: sum is not defined
+    at <anonymous>:1:27
+(anonymous) @ VM3565:1
+document;
+#document (about:blank)<html>​<head>​</head>​<body>​</body>​</html>​
